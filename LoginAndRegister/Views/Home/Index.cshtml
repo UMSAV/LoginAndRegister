@@ -1,0 +1,16 @@
+﻿@inject SignInManager<IdentityUser> SignInManager
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if (SignInManager.IsSignedIn(User))
+{
+    
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Assalomu alaykum!</h1>
+        <p>Namangan davlat universiteti Iqtidorli talabalar online platformasiga xush kelibsiz!</p>
+    </div>
+}
